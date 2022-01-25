@@ -12,6 +12,7 @@ export default function PlaceOrder() {
     const Refrence = useRef();
     const history = useHistory();
     const Context = useContext(MyContext);
+    const [msg, setmsg] = useState("")
     const [userData, setUserData] = useState({
         orderId: "",
         name: "",
@@ -22,12 +23,14 @@ export default function PlaceOrder() {
         totalCost: "",
         date: ""
     });
+    //--------------------------Total Cost-------------------------------
     let TotalCost = 0;
     useEffect(() => {
         Context.selectedItem.forEach(element => {
             TotalCost += Number(element.menu_price);
         });
 
+        //----------------Current Date---------------------------
         let today = new Date();
         let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
         let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -61,8 +64,12 @@ export default function PlaceOrder() {
                 address: Address
             }
         });
+        setmsg("");
     }
+    
     function handleClick() {
+        if (userData.address === "") setmsg("Please Enter Your Address !");
+        else{
         fetch(placeorderUrl, {
             method: 'POST', headers: {
                 'accept': 'application/json',
@@ -75,6 +82,7 @@ export default function PlaceOrder() {
                 Refrence.current.submit();
             })
             .catch((err) => { console.log(err); });
+        }
 
     }
     // https://paytm-pament-gateway.herokuapp.com/paynow
@@ -98,7 +106,7 @@ export default function PlaceOrder() {
                         <FloatingLabel controlId="phone" label="Phone Number" className="mb-3">
                             <Form.Control onChange={handleChange} type="text" value={userData.phone} name='phone' readOnly />
                         </FloatingLabel>
-
+                        <span style={{"color":"red"}}>{msg}</span>
                         <FloatingLabel controlId="address" label="Address" className="mb-3">
                             <Form.Control onChange={handleChange} type="text" name='address' value={userData.address} />
                         </FloatingLabel>
