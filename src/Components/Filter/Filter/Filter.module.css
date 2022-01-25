@@ -1,0 +1,52 @@
+.filter{
+   padding-top: 2%;
+    width: 30%;
+    text-align: center;
+
+}
+.filterContainer{
+    border: 1px solid rgb(211 207 207);
+    display: inline-block ;
+    background-color: white;
+    text-align: left;
+    width: 300px;
+    line-height: 2;
+    padding: 20px 5px;
+    
+    border-radius: 10px;
+    
+}
+.filterHeading{
+    color: #ea5c2b;;
+    font-size: 1.8rem;    
+    padding-left: 10px ;   
+}
+.itemContainer{
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+.itemName{
+    margin: 5px;
+}
+
+
+  
+  @media(max-width:450px){
+  
+    .filterContainer{
+        width: 100%;
+        padding: 10px 2px;
+    }
+    .filterHeading{
+        font-size: 1rem;    
+        padding-left: 0 ;   
+    }
+    .itemContainer{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .itemName{
+        margin: 5px;
+    }
+  }
+ 

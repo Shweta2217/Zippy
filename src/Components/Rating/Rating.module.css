@@ -1,0 +1,9 @@
+.rating{
+    /* margin: 10px 0; */
+    display: block;
+}
+@media(max-width:450px){
+    .rating{
+        font-size: 8px;
+    }
+}

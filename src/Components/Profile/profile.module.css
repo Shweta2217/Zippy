@@ -1,0 +1,14 @@
+.container {
+    height: 500px;
+    padding: 5%;
+    color: #0b5ed7; 
+    
+}
+.nameHeading{
+    color: #ea5c2b;
+}
+
+.logoutBtn {
+    font-size: 1.7rem;
+    color: white
+}

@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    padding: 4% 10%;
+}
+
+.detailsContainer {
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding: 3% 2%;
+    border-radius: 5px;
+    background-color: #b1aeae54;
+}
+
+.cost {
+    font-size: 1.3rem;
+}
+.Button{
+    font-size: 1.3rem;
+}
+
+@media(max-width:450px){
+    .Button{
+        font-size: 14px;
+    }
+}

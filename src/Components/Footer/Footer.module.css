@@ -1,0 +1,44 @@
+.footer {
+    background-color: #aaa8a8cf;
+    position: relative;
+    z-index: 1;
+}
+
+.brand {
+    margin: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footerContent {
+    margin-top: 20px;
+    color: white;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerLinks:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.copyright_text {
+    text-align: center;
+    background-color: #ea5c2b;
+    color: white;
+    padding: 10px;
+}
+
+.footerIcon {
+    font-size: 2rem;
+    margin: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.footerIcon:hover {
+    color: black;
+}

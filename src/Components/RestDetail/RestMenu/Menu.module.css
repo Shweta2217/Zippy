@@ -1,0 +1,106 @@
+.menuContainer {
+    padding: 0 7%;
+}
+.mainHeading{
+    color: #ea5c2b;
+}
+.menuCard {
+    display: flex;
+    border: 1px solid rgba(210, 203, 203, 0.49);
+    box-shadow: 2px 2px 17px -5px #aaa4a494;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.menuCard:hover {
+    box-shadow: 2px 2px 20px 1px grey;
+}
+
+.menuContentContainer {
+    width: 90%;
+    display: flex;
+}
+
+.menuItemImg {
+    height: 160px;
+    width: 250px;
+    border-radius: 5px
+}
+
+.menuName{
+    color: #ea5c2b;
+}
+
+.detailContainer {
+    margin:10px 15px;
+}
+
+.dishType {
+    margin: 5px 2px;
+}
+.pice{
+    font-size: 1.3rem;
+}
+
+.dot {
+color: #ea5c2b;
+}
+
+.buttonContainer {
+    width: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Icon {
+    font-size: 3rem;
+    color: green;
+    place-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.Icon:hover {
+    color: #ea5c2b;
+}
+
+@media(max-width:450px){
+    .menuContainer {
+        padding: 0 0;
+    }
+    
+    .menuCard {
+        margin: 10px;
+    }
+     
+    .menuContentContainer {
+        width: 90%;
+        display: flex;
+    }
+    
+    .menuItemImg {
+        height: 120px;
+        width: 100px;
+    }
+  
+    .detailContainer {
+        margin:5px;
+    }
+    .menuName{
+        font-size: 1rem;
+    }
+    .description{
+        font-size: 10px;
+    }    
+    .dishType {
+        font-size: 9px;
+        margin: 2px 0;
+    }
+    .pice{
+        font-size: 12px;
+    }
+      .Icon {
+        font-size: 1.7rem;      
+    }
+  }

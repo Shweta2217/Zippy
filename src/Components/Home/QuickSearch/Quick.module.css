@@ -1,0 +1,12 @@
+.quickHeading {
+    margin: 15px;
+    font-size: 2.2rem;
+    color: #ea5c2b;
+}
+  
+  @media(max-width:500px){
+    .quickHeading {
+        font-size: 1.5rem;
+    }
+  }
+ 

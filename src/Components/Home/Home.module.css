@@ -1,0 +1,44 @@
+.homeSection {
+  background-color: #ea5c2b;
+  height: 500px;
+}
+.mainHeading {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  padding: 50px 22% 10px 22%;
+  text-align: center;
+}
+
+
+@media(max-width:850px){
+  .mainHeading {
+    font-size: 3rem;
+    padding: 50px 15% 10px 15%; 
+  }
+  .homeSection {
+    height: 430px;
+  }
+}
+
+@media(max-width:450px){
+  .mainHeading {
+    font-size: 2.2rem;
+    padding: 50px 10% 10px 10%; 
+  }
+  .homeSection {
+    height: 400px;
+  }  
+}
+@media(max-width:250px){
+  .mainHeading {  
+
+    font-size: 1.3rem;
+    padding: 20px 10% 10px 10%; 
+  }
+  .homeSection {
+    height: 220px;
+  }
+  
+}

@@ -1,0 +1,8 @@
+.loaderDiv{
+    text-align: center;
+    padding: 10% 0;
+}
+.loader{
+    height: 120px;
+    width: 120px;
+}

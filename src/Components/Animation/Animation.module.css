@@ -1,0 +1,247 @@
+.bgDeco {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+@keyframes BgAnimation {
+    0% {
+        background-color: #A3DA8D;
+        left: 100px;
+        top: 120px;
+    }
+    25% {
+        background-color: #add19f;
+        left: 250px;
+        top: 200px;
+    }
+    50% {
+        background-color: #C37B89;
+        left: 400px;
+        top: 300px;
+    }
+    75% {
+        background-color: #add19f;
+        left: 550px;
+        top: 200px;
+    }
+    100% {
+        background-color: #A3DA8D;
+        left: 700px;
+        top: 150px;
+    }
+}
+
+.bgDeco1 {
+    border-radius: 50%;
+    height: 150px;
+    opacity: 0.7;
+    width: 150px;
+    animation: BgAnimation 15s linear 0.1s infinite alternate;
+}
+
+.bgDeco2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
+    animation: BgAnimation 15s linear 0.1s infinite alternate-reverse;
+}
+
+@keyframes BgAnimation2 {
+    0% {
+        background-color: #F6D860;
+        right: 100px;
+        top: 120px;
+    }
+    25% {
+        background-color: #aa848c;
+        right: 250px;
+        top: 200px;
+    }
+    50% {
+        background-color: #A3DA8D;
+        right: 400px;
+        top: 300px;
+    }
+    75% {
+        background-color: #a07b83;
+        right: 550px;
+        top: 200px;
+    }
+    100% {
+        background-color: #F6D860;
+        right: 700px;
+        top: 150px;
+    }
+}
+
+.bgDeco3 {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    opacity: 0.7;
+    animation: BgAnimation2 15s linear 0.1s infinite alternate-reverse;
+}
+
+.bgDeco4 {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    opacity: 0.7;
+    animation: BgAnimation2 15s linear 0.1s infinite alternate;
+}
+
+@keyframes BgAnimation3 {
+    0% {
+        background-color: #F6D860;
+        right: 100px;
+        bottom: 120px;
+    }
+    25% {
+        background-color: #F6D860;
+        right: 250px;
+        bottom: 200px;
+    }
+    50% {
+        background-color: #95CD41;
+        right: 400px;
+        bottom: 300px;
+    }
+    75% {
+        background-color: #F6D860;
+        right: 550px;
+        bottom: 200px;
+    }
+    100% {
+        background-color: #F6D860;
+        right: 700px;
+        bottom: 150px;
+    }
+}
+
+.bgDeco5 {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+    animation: BgAnimation3 15s linear 0.1s infinite alternate;
+}
+
+.bgDeco6 {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+    animation: BgAnimation3 15s linear 0.1s infinite alternate-reverse;
+}
+
+@keyframes BgAnimation4 {
+    0% {
+        background-color: #F6D860;
+        left: 110px;
+        bottom: 120px;
+    }
+    25% {
+        background-color: #F6D860;
+        left: 180px;
+        bottom: 200px;
+    }
+    50% {
+        background-color: #95CD41;
+        left: 300px;
+        bottom: 300px;
+    }
+    75% {
+        background-color: #F6D860;
+        left: 450px;
+        bottom: 200px;
+    }
+    100% {
+        background-color: #F6D860;
+        left: 750px;
+        bottom: 150px;
+    }
+}
+
+.bgDeco7 {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+    animation: BgAnimation4 15s linear 0.1s infinite alternate-reverse;
+}
+
+.bgDeco8 {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    opacity: 0.7;
+    animation: BgAnimation4 15s linear 0.1s infinite alternate;
+}
+
+@media(max-width:1100px){
+    .bgDeco7 {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        opacity: 0.7;
+        animation:none;
+        left: 1000px;
+        bottom: 120px;
+    }
+    
+    .bgDeco8 {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        opacity: 0.7;
+        animation: none;
+    }
+    .bgDeco5 {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        opacity: 0.7;
+        animation: none;
+    }
+    
+    .bgDeco6 {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        opacity: 0.7;
+        animation: none;
+    }
+    .bgDeco3 {
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        opacity: 0.7;
+        animation: none;
+    }
+    
+    .bgDeco4 {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        opacity: 0.7;
+        animation: none;
+    }
+    
+.bgDeco1 {
+    border-radius: 50%;
+    height: 150px;
+    opacity: 0.7;
+    width: 150px;
+    animation: none;
+
+}
+
+.bgDeco2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
+    animation: none;
+}
+ }

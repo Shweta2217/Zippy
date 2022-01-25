@@ -1,0 +1,54 @@
+.searchRestaurents {
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.select {
+    width: 40%;
+    outline: none;
+    font-size: 1.7rem;
+    border: 1px solid white;
+    background-color: #ea5c2b;
+    padding: 5px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.select:hover {
+    border: 1px solid #ea5c2b;
+    background-color: white;
+    color: #ea5c2b;
+}
+
+.location {
+    margin-right: 10px;
+}
+
+.resta {
+    margin-left: 10px;
+}
+
+@media(max-width:850px){
+    .searchRestaurents {
+        padding: 5% 15%;
+    }
+    .select {
+        width: 40%;
+        font-size: 1.7rem;    
+    }
+  }
+  
+  @media(max-width:450px){
+    .searchRestaurents {
+        padding: 5%;
+    }
+    .select {
+        width: 45%;
+        font-size: 1.2rem;  
+    }
+      
+  }
+ 
+  

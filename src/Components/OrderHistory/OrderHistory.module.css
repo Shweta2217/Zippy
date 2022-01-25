@@ -1,0 +1,17 @@
+.orderListContainer {
+    padding: 2% 3% 5% 3%;
+}
+
+.heading {
+    margin: 2%;
+    color: #ea5c2b;
+}
+
+@media(max-width:450px){
+.TH{
+    font-size: 10px;
+}
+.orderListContainer {
+    padding: 2% 0%;
+}
+}

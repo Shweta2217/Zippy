@@ -1,0 +1,51 @@
+.restContainer{
+    padding: 3%;
+}
+.thumbImg{
+    border: 2px solid white;
+    height: 400px;
+    width: 100%;
+}
+.heading{
+    color: #ea5c2b;
+}
+
+.restImages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.imageGallery{
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+.galleryIMG{    
+  width: 100%;
+  border: 2px solid white;
+  height: 200px;
+}
+
+.address{
+    margin-top: 10px;
+}
+
+
+@media(max-width:450px){
+    .restContainer{
+        padding: 1%;
+    }
+    .thumbImg{
+        height: 300px;
+        width: 100%;
+    } 
+    .galleryIMG{    
+      width: 100%;
+      border: 2px solid white;
+      height: 150px;
+    }    
+    .address{
+        margin-top: -5px;
+        margin-bottom: 1px;
+    }
+  }
+
+

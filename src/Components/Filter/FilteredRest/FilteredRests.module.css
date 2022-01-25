@@ -1,0 +1,102 @@
+.RestContainer {
+    width: 70%;
+}
+
+.restLink { 
+    text-decoration: none;
+}
+.restCard {
+    box-shadow: 2px 2px 17px -5px #aaa4a494;
+    border: 1px solid rgb(211 207 207);
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+}
+
+.restCard:hover {
+    box-shadow: 2px 2px 20px 1px grey;
+}
+
+.foodImg {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.detailsCont {
+    margin: 10px 0 0 10px;
+}
+
+.restheading {
+    font-size: 1.8rem;
+    margin: 5px 0;
+    color: #ea5c2b;
+}
+
+.restaddress {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.restcost {
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+.malTypes {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.HR {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid gray;
+    width: 500px;
+}
+
+@media(max-width:450px){
+    .restCard {
+        margin:5px;
+    }
+    
+    .foodImg {
+        height: 100px;
+        width: 70px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .detailsCont {
+        margin: 3px 0 0 3px;
+    }
+    
+    .restheading {
+        font-size:14px;
+        margin: 1px 0;
+        color: #ea5c2b;
+    }
+    
+    .restaddress {
+        font-size: 7px;
+        margin: 2px 0;
+    }
+    
+    .restcost {
+        font-size: 10px;
+        margin: 1px 0;
+    }
+    
+    .malTypes {
+        font-size: 7px;
+        margin: 1px 0;
+    }
+    
+    .HR {
+        margin: 3px 0;
+        border: none;
+        border-top: 1px solid gray;
+        width: 150px;
+    }
+  }

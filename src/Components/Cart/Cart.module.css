@@ -1,0 +1,149 @@
+.CardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    color: #0b5ed7;
+}
+.mainHeading{
+    color: #ea5c2b;
+    margin: 20px 0 0 50px;
+}
+
+.Card {
+    width: 277px;
+    box-shadow: 2px 2px 17px -5px #aaa4a494;
+    border: 1px solid #a3a2a27a;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.dishImg {
+    height: 200px;
+    width: 100%;
+}
+
+.dishName {
+   font-size: 1.6rem;
+   color: #ea5c2b;
+}
+
+.dishPrice {
+    font-size: 1.3rem;
+   
+}
+
+.dishDescription {
+    margin: 10px 10px 0px 10px;
+}
+
+.dishType {
+    margin-bottom: 5px !important;
+}
+
+.dot {
+   color: #ea5c2b;
+}
+
+.Div {
+    margin: 5px 30px 30px 20px;
+
+}
+
+.deleteContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.delete {
+    font-size: 2.4rem;
+    color: rgb(13, 110, 253);
+    cursor: pointer;
+    text-align: end;
+}
+.orderBtn{
+    font-size: 1.3rem;
+}
+
+.delete:hover {
+    color: #ea5c2b;
+}
+
+.btnLink {
+    color: white;
+    text-decoration: none;
+}
+
+.btnLink:hover {
+    color: white;
+}
+
+.emptyContainer {
+    background-color: #ea5c2b;
+    padding: 10%;
+    color: white;
+}
+
+.emptyIcon {
+    padding-bottom: 5px;
+    font-size: 5rem;
+}
+
+.btn {
+    color: white;
+    background-color: #ea5c2b;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.btn:hover {
+    color: #ea5c2b;
+    background-color: white;
+    border: none;
+}
+
+@media(max-width:450px){
+    .mainHeading{
+        font-size: 1.3rem;
+    }
+.Card {
+    width: 160px;
+    margin:10px 5px;
+}
+
+.dishImg {
+    height: 150px;
+    width: 100%;
+}
+
+.dishName {
+   font-size: 1rem;
+}
+.dishPrice {
+    font-size: 13px;
+}
+
+.dishDescription {
+    margin: 10px 10px 0px 10px;
+}
+.dishType {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.deleteContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.delete {
+    font-size: 1.5rem;
+   
+}
+.Div {
+    margin: 5px 30px 30px 20px;
+    font-size: 2rem;
+}
+}

@@ -1,0 +1,55 @@
+.header {
+    background-color: #ea5c2b;
+    height: 50px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.IconContainer{
+    align-self: center;  
+}
+
+.mainIcon {    
+    display: inline-block;
+    font-size: 2rem;  
+    font-weight: bold;
+}
+
+.btnContainer { 
+   place-self:end;   
+   align-self: center;
+}
+
+.Link {   
+    color: white;
+    text-decoration: none;
+}
+.Link:hover{
+    color: #722d16;
+}
+
+.Icon {
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+.loginIcon{
+    font-size: 1.5rem;
+    
+}
+
+/* ________________________________Media Querry_______________________________ */
+
+@media(max-width:450px){
+  
+    .mainIcon {      
+        font-weight: bold;
+        font-size: 1.5rem;  
+    }
+    .Icon {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+    
+}
+
