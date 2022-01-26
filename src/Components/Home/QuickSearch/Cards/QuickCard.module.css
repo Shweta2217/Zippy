@@ -9,6 +9,7 @@
 .Card {
     height: 370px;
     width: 277px;
+    border: 1px solid rgba(156, 155, 155, 0.49);
     box-shadow: 2px 2px 17px -5px #aaa4a494;
     border-radius: 5px;
     margin: 15px 20px;
@@ -51,7 +52,7 @@
   
   @media(max-width:450px){
     .cardContainer {
-        padding: 20px 3%;      
+        padding: 20px 2%;      
     }
     .Card {
         height: 230px;
@@ -66,4 +67,11 @@
       font-size: 1.2rem;
     }
   }
+   
+  /* @media(max-width:380px){
+    .cardContainer {
+        padding: 20px 2%;      
+    }
+ 
+  } */
  

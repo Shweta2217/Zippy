@@ -34,13 +34,13 @@
         padding: 1%;
     }
     .thumbImg{
-        height: 300px;
+        height: 280px;
         width: 100%;
     } 
     .galleryIMG{    
       width: 100%;
       border: 2px solid white;
-      height: 150px;
+      height: 140px;
     }    
     .address{
         margin-top: -5px;

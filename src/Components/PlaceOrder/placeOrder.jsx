@@ -85,14 +85,13 @@ export default function PlaceOrder() {
         }
 
     }
-    // https://paytm-pament-gateway.herokuapp.com/paynow
     function InputFeilds(userData) {
         return (
             <div className={Css.container}>
                 <Animation />
                 <div className={Css.detailsContainer}>
                     <form ref={Refrence}
-                        action="http://localhost:4100/paynow" method='POST'
+                        action="https://paytm-a-p-i.herokuapp.com/paynow" method='POST'
                     >
 
                         <FloatingLabel controlId="floatingInput" label="Name" className="mb-3">

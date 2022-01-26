@@ -62,7 +62,7 @@
     }
     
     .foodImg {
-        height: 100px;
+        height: 90px;
         width: 70px;
         margin: 5px;
         border-radius: 10px;
@@ -80,16 +80,14 @@
     
     .restaddress {
         font-size: 7px;
-        margin: 2px 0;
-    }
-    
-    .restcost {
-        font-size: 10px;
-        margin: 1px 0;
-    }
+    }    
     
     .malTypes {
-        font-size: 7px;
+        font-size: 8px;
+        margin: 0;
+    }
+    .restcost {
+        font-size: 10px;
         margin: 1px 0;
     }
     

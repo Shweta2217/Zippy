@@ -14,7 +14,7 @@
 .Card {
     width: 277px;
     box-shadow: 2px 2px 17px -5px #aaa4a494;
-    border: 1px solid #a3a2a27a;
+    border: 1px solid rgba(156, 155, 155, 0.49);
     margin: 20px 10px;
     border-radius: 5px;
 }

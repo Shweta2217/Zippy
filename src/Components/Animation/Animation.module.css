@@ -180,68 +180,88 @@
 }
 
 @media(max-width:1100px){
+    .bgDeco {
+        display: none;
+        position:absolute;
+        background-repeat: no-repeat;
+    }
     .bgDeco7 {
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        opacity: 0.7;
+      
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
         animation:none;
-        left: 1000px;
-        bottom: 120px;
+        left: 0;
+        bottom: 0;
     }
     
     .bgDeco8 {
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        opacity: 0.7;
-        animation: none;
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        animation:none;
+        left: 0;
+        bottom: 0;;
     }
     .bgDeco5 {
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        opacity: 0.7;
-        animation: none;
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        animation:none;
+        left: 0;
+        bottom: 0;
     }
     
     .bgDeco6 {
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        opacity: 0.7;
-        animation: none;
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        animation:none;
+        left: 0;
+        bottom: 0;
     }
     .bgDeco3 {
-        border-radius: 50%;
-        height: 120px;
-        width: 120px;
-        opacity: 0.7;
-        animation: none;
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        animation:none;
+        left: 0;
+        bottom: 0;
     }
     
     .bgDeco4 {
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        opacity: 0.7;
-        animation: none;
+        border-radius: 0;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        animation:none;
+        left: 0;
+        bottom: 0;
     }
     
 .bgDeco1 {
-    border-radius: 50%;
-    height: 150px;
-    opacity: 0.7;
-    width: 150px;
-    animation: none;
+    border-radius: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    animation:none;
+    left: 0;
+    bottom: 0;
 
 }
 
 .bgDeco2 {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    opacity: 0.7;
-    animation: none;
+    border-radius: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    animation:none;
+    left: 0;
+    bottom: 0;
 }
  }

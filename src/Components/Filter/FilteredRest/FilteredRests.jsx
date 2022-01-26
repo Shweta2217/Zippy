@@ -21,7 +21,7 @@ export default function FilteredRests(props) {
             />
             <span className={Css.detailsCont}>
               <h4 className={Css.restheading}>{restdata.restaurant_name}</h4>
-              <p className={Css.restaddress}>{restdata.address}</p>
+              <span className={Css.restaddress}>{restdata.address}</span>
               {restdata.mealTypes.map((meal,index) => {
                 return (
                   <span className={Css.malTypes} key={index+"mealType"}>

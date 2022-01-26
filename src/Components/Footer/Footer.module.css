@@ -1,5 +1,5 @@
 .footer {
-    background-color: #aaa8a8cf;
+    background-color: #7e7d7dcf;
     position: relative;
     z-index: 1;
 }
@@ -19,19 +19,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 .footerLinks:hover {
     color: black;
     cursor: pointer;
 }
-
-.copyright_text {
-    text-align: center;
-    background-color: #ea5c2b;
-    color: white;
-    padding: 10px;
-}
-
 .footerIcon {
     font-size: 2rem;
     margin: 8px;
@@ -41,4 +32,33 @@
 
 .footerIcon:hover {
     color: black;
+}
+
+.copyright_text {
+    text-align: center;
+    background-color: #ea5c2b;
+    color: white;
+    padding: 10px;
+}
+
+
+@media(max-width:450px){
+    
+.brand {
+    margin: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+    .footer_headings{
+        font-size:1rem;
+    }
+.footerLinks{
+    margin: 2px 0;
+    font-size: 14px;
+}
+.footerIcon {
+    font-size: 14px;
+    margin: 3px;
+ 
+}
 }
