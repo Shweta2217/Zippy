@@ -45,8 +45,7 @@
 
 @media(max-width:450px){
     .Container {
-        text-align: center;
-        padding: 5% ;
+        padding: 5% 5px 10px 5px;
     }
     
     .loginContainer {

@@ -64,14 +64,15 @@ color: #ea5c2b;
 .Icon:hover {
     color: #ea5c2b;
 }
+/* ________________________Media Querry_______________________________________ */
 
 @media(max-width:450px){
     .menuContainer {
-        padding: 0 0;
+        padding: 0;
     }
     
     .menuCard {
-        margin: 10px;
+        margin: 10px 2px;
     }
      
     .menuContentContainer {

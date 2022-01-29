@@ -104,7 +104,7 @@
     background-color: white;
     border: none;
 }
-
+/* ________________________Media Querry_______________________________________ */
 @media(max-width:450px){
     .mainHeading{
         font-size: 1.3rem;
@@ -115,7 +115,7 @@
 }
 
 .dishImg {
-    height: 150px;
+    height: 120px;
     width: 100%;
 }
 
@@ -145,5 +145,16 @@
 .Div {
     margin: 5px 30px 30px 20px;
     font-size: 2rem;
+}
+.emptyContainer {
+    padding: 25% 0 45% 0;
+}
+.emptyIcon {
+    padding-bottom: 5px;
+    font-size: 3rem;
+}
+.btn {
+    font-size: 1rem;
+    padding: 3px;
 }
 }

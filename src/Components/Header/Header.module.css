@@ -34,21 +34,41 @@
 }
 
 .loginIcon{
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;    
+}
+.cartCount{
+    border: 1px solid #0b5ed7;
+    border-radius: 100%;
+    padding:0 5px;
+    color:white ;
+    background-color:#0b5ed7; 
+    font-size: 1rem
 }
 
 /* ________________________________Media Querry_______________________________ */
 
 @media(max-width:450px){
-  
+  .header {
+    background-color: #ea5c2b;
+    height: 50px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
     .mainIcon {      
         font-weight: bold;
         font-size: 1.5rem;  
     }
     .Icon {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 10px;
+    }
+    .loginIcon{
+        font-size: 1rem;    
+    }
+    .cartCount{
+        padding:0 2px;
+        font-size: 11px;
     }
     
 }

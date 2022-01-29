@@ -4,7 +4,8 @@ import Css from './Menu.module.css';
 import { FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 import MyContext from "../../../Context/Context";
-import { Toast } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Menu(props) {
     const Context = useContext(MyContext);
@@ -19,7 +20,19 @@ export default function Menu(props) {
 
 
     function Add(Data) {
-        if (Context.isLogin) Context.cartItems(Data);
+
+        if (Context.isLogin) {
+            Context.cartItems(Data);
+            toast.success(Data.menu_name + " Added to Cart", {
+                position: "bottom-left",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
         else history.push('/login');
     }
 
@@ -54,7 +67,17 @@ export default function Menu(props) {
             <hr />
             <h2 className={Css.mainHeading}>Menu</h2>
             {menuData !== "" && menuCards(menuData)}
-
+            <ToastContainer
+                position="bottom-left"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     )
 }

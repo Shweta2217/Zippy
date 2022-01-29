@@ -12,3 +12,17 @@
     font-size: 1.7rem;
     color: white
 }
+/* ________________________Media Querry_______________________________________ */
+
+@media(max-width:450px){
+    .container {
+        height: 500px;
+        padding: 20% 2% 0 2%;
+        color: #0b5ed7; 
+        
+    }
+    
+    .logoutBtn {
+        font-size: 1.7rem;
+    }
+}

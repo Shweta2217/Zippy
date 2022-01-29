@@ -6,7 +6,6 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import { MdDelete } from 'react-icons/md';
 import Css from './Cart.module.css';
 import { BsCartXFill } from 'react-icons/bs';
-import {Button} from 'react-bootstrap'
 
 
 export default function Cart() {
@@ -16,6 +15,10 @@ export default function Cart() {
     useEffect(() => {
         setItems(Context.selectedItem);
     }, [Context.selectedItem]);
+    
+    // if (items !== null)  Context.setCount(items.length);
+    // else Context.setCount(0);    
+    // console.log(Context.cartItemCount); 
 
     function deleteCartItem(index) {
         Context.deleteCartItem(index);
@@ -33,7 +36,6 @@ export default function Cart() {
                     <div className={Css.dishDescription}>
                         <h5 className={Css.dishName}>{items.menu_name}</h5>
                         <div className={Css.dishPrice}>Cost : &#8377; {items.menu_price} </div>
-                        <div className={Css.dishType}><i className={Css.dot}><GoPrimitiveDot /></i>{items.menu_type}</div>
                         <div className={Css.deleteContainer}>
                             <i onClick={() => { deleteCartItem(index) }} className={Css.delete}><MdDelete /></i>
                         </div>

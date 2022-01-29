@@ -21,8 +21,12 @@
 .Button{
     font-size: 1.3rem;
 }
+/* ________________________Media Querry_______________________________________ */
 
 @media(max-width:450px){
+    .container {
+        padding: 10% 2% 15% 2%;
+    }
     .Button{
         font-size: 14px;
     }

@@ -10,6 +10,7 @@ import { useContext } from 'react';
 export default function Header() {
   let Context = useContext(MyContext);
   const [userData,setData] =useState("");
+  const [cartCount, setCount]= useState(0);
   const profileUrl = "https://zippylog.herokuapp.com/api/auth/userPofile";
 
   useEffect(()=>{    
@@ -29,8 +30,10 @@ export default function Header() {
       window.sessionStorage.setItem("UserInfo", JSON.stringify(userInfo));
 
     });
+      setCount(Context.cartCount)
+
   }
-  },[Context.isLogin])
+  },[Context.isLogin ,Context.cartCount ])
 
 
   return (
@@ -42,7 +45,7 @@ export default function Header() {
       <span className={Css.btnContainer}>
         {Context.isLogin ?
           <>
-            <Link className={Css.Link} to="/cart"><span className={Css.Icon}><BsCartFill /></span></Link>
+            <Link className={Css.Link} to="/cart"><span className={Css.Icon}><BsCartFill /><sup className={Css.cartCount}>{cartCount}</sup></span></Link>
             <Link className={Css.Link} to="/profile"><span className={Css.Icon}><RiUser6Fill /></span></Link>
           </>
           :

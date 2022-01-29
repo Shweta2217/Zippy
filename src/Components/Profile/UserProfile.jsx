@@ -10,7 +10,6 @@ export default function UserProfile() {
     const Context = useContext(MyContext);
     const history = useHistory();
     const [userData, setUserData] = useState("");    
-    let localData = JSON.parse(window.sessionStorage.getItem("UserInfo")); 
     useEffect(() => {            
         setUserData(JSON.parse(window.sessionStorage.getItem("UserInfo")));      
     },[]);

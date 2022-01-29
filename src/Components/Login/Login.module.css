@@ -47,7 +47,9 @@
         text-align: center;
         padding: 7% 5%; 
     }
-    
+    .Container {
+        padding: 15% 5px 20% 5px;
+    }
     .loginContainer {
         width: 100%;    
     }
