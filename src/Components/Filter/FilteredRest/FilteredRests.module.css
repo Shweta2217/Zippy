@@ -1,5 +1,6 @@
 .RestContainer {
-    width: 70%;
+    width: 100%;
+    padding: 2% 0px;
 }
 
 .restLink { 
@@ -55,15 +56,16 @@
     border-top: 1px solid gray;
     width: 500px;
 }
+/* ________________________Media Querry_______________________________________ */
 
 @media(max-width:450px){
     .restCard {
-        margin:5px;
+        margin:7px 0;
     }
     
     .foodImg {
-        height: 90px;
-        width: 70px;
+        height:102px;
+        width: 100px;
         margin: 5px;
         border-radius: 10px;
     }
@@ -73,21 +75,21 @@
     }
     
     .restheading {
-        font-size:14px;
-        margin: 1px 0;
-        color: #ea5c2b;
+        font-size:16px;
+        margin: 0 0;
     }
     
     .restaddress {
-        font-size: 7px;
+        font-size: 10px;
+        margin: 0 0 -2px 0 !important;
     }    
     
     .malTypes {
-        font-size: 8px;
-        margin: 0;
+        font-size: 10px;
+        padding: -2px 0 0 0 !important;
     }
     .restcost {
-        font-size: 10px;
+        font-size: 11px;
         margin: 1px 0;
     }
     
@@ -95,6 +97,6 @@
         margin: 3px 0;
         border: none;
         border-top: 1px solid gray;
-        width: 150px;
+        width: 230px;
     }
   }

@@ -1,6 +1,6 @@
 .filter{
    padding-top: 2%;
-    width: 30%;
+    width: 100%;
     text-align: center;
 
 }
@@ -12,9 +12,7 @@
     width: 300px;
     line-height: 2;
     padding: 20px 5px;
-    
-    border-radius: 10px;
-    
+     border-radius: 10px;
 }
 .filterHeading{
     color: #ea5c2b;;
@@ -28,23 +26,31 @@
 .itemName{
     margin: 5px;
 }
+/* ________________________Media Querry_______________________________________ */
   
   @media(max-width:450px){
-  
+    .filter{
+        padding-top: 0;        
+     }
     .filterContainer{
         width: 100%;
         padding: 10px 2px;
+        line-height: 0;       
+    }
+    .cuisineContainer{
+        display: none;
     }
     .filterHeading{
         font-size: 1rem;    
         padding-left: 0 ;   
     }
     .itemContainer{
-        margin-left: 10px;
-        font-size: 10px;
+        display: inline;
+        margin-left: 5px;
+        font-size: 12px;
     }
     .itemName{
-        margin: 5px;
+        margin-left: 1px;
     }
   }
  

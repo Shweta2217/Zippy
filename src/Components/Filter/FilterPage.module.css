@@ -8,7 +8,9 @@
 
 @media(max-width:850px){
     .Container{
-        padding: 5% 1%;
+        display:block;
+        flex-direction: none;
+        padding: 5% 0;
     
     }
 }

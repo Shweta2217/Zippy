@@ -22,15 +22,17 @@ export default function FilteredRests(props) {
             <span className={Css.detailsCont}>
               <h4 className={Css.restheading}>{restdata.restaurant_name}</h4>
               <span className={Css.restaddress}>{restdata.address}</span>
-              {restdata.mealTypes.map((meal,index) => {
-                return (
-                  <span className={Css.malTypes} key={index+"mealType"}>
-                     &nbsp;
-                    <GoPrimitiveDot color="green" />
-                   {meal.mealtype_name}
-                  </span>
-                );
-              })}
+              <div>
+                {restdata.mealTypes.map((meal, index) => {
+                  return (
+                    <span className={Css.malTypes} key={index + "mealType"}>
+                      &nbsp;
+                      <GoPrimitiveDot color="green" />
+                      {meal.mealtype_name}
+                    </span>
+                  );
+                })}
+              </div>
               <p className={Css.restcost}>Cost for two :  &#8377;  {restdata.cost}</p>
 
               <hr className={Css.HR} />

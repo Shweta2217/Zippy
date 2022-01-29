@@ -4,20 +4,23 @@ export default MyContext;
 
 //Context Wrapper
 export function Wrapper(props) {
-    // ______________________________________States_______________________________
+    // _______________________________States_______________________________
     let localCart = JSON.parse(window.localStorage.getItem("CartItems"));
     const [selectedItem, SetItem] = useState(localCart);//Cart Items
 
     let LocalToken = window.localStorage.getItem("Token");
     const [Token, setToken] = useState(LocalToken);//Token
 
-    let counter = 0;
-    if (localStorage.getItem("CartItem")) {
-        counter = JSON.parse(localStorage.getItem("CartItem")).length;
-    }
+    let counter ;
+    let localCartItems = JSON.parse(window.localStorage.getItem("CartItems"));
+    if (localCartItems === null || localCartItems === undefined) {
+        counter = 0;
+    }else{
+    counter = localCartItems.length;
+}
     const [cartCount, setCount] = useState(counter); //Cart Item Count
 
-    //______________________________________Functions______________________________
+    //_______________________________Functions______________________________
 
 
     //Recieving Token from Login Page And setting the token into Local Storage
